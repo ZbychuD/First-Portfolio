@@ -3,3 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background-color: #29a6dc;
+    overflow: hidden;
+    
+}
+div.welcome{
+    
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+div h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Saira Condensed bold', sans-serif;
+    
+}
+div h2{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+div h2+h2{
+    margin-bottom: 10px;
+}
+.welcome button {
+    width: 60%;
+    color: white;
+   font-size: 20px;
+   font-family: 'Saira Condensed', sans-serif;
+    background-color: transparent;
+    border: 2px solid white;
+}
+img{
+    position: absolute;
+    height: 75%;
+    bottom: -10%;
+    left: 0;
+}
