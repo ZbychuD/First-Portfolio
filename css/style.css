@@ -1,51 +1,173 @@
+/*Reset*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*Header styles */
+
 header{
     position: relative;
     height: 90vh;
     width: 100%;
     background-color: #29a6dc;
     overflow: hidden;
-    
+    max-width: 1920px;
+    margin: 0 auto;
 }
-div.welcome{
+header div{
     
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 5%;
     right: 5%;
     color: white;
     text-transform: uppercase;
     text-align: center;
+    z-index: 1;
 }
-div h1{
-    font-size: 30px;
+header h1{
+    font-size: 40px;
     margin-bottom: 10px;
-    font-family: 'Saira Condensed bold', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
     
 }
-div h2{
-    font-size: 18px;
-    margin-bottom: 5px;
+header h2{
+    font-size: 20px;
     font-family: 'Saira Condensed', sans-serif;
+
 }
-div h2+h2{
-    margin-bottom: 10px;
+header h2+h2{
+    font-weight: 400;
 }
-.welcome button {
-    width: 60%;
+header button {
     color: white;
-   font-size: 20px;
+   font-size: 12px;
    font-family: 'Saira Condensed', sans-serif;
     background-color: transparent;
     border: 2px solid white;
+    line-height: 32px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 20px;
 }
-img{
+header img{
     position: absolute;
-    height: 75%;
+    height:70%;
     bottom: -10%;
     left: 0;
+}
+/*media header*/
+@media (orientation:portrait) and (min-width:360px){
+    header button{
+        line-height: 40px;
+        font-size: 20px;
+    }
+}
+@media (orientation:portrait) and (min-width:410px){
+    header h1{
+        font-size: 48px;
+    }
+    header h2 {
+        font-size: 26px;
+    }
+    header button{
+line-height: 40px;
+font-size: 20px;
+    }
+}
+@media (orientation:portrait) and (min-width:720px){
+    
+    header h1{
+        font-size: 70px;
+    }
+    header h2 {
+        font-size: 40px;
+    }
+    header button{
+line-height: 60px;
+font-size: 30px;
+    }
+}
+@media (orientation:portrait) and (min-width:1024px){
+    
+    header h1{
+        font-size: 90px;
+    }
+    header h2 {
+        font-size: 50px;
+    }
+    header button{
+line-height: 70px;
+font-size: 35px;
+    }
+}
+@media (orientation:landscape){
+    header img {
+        height: 100%;
+    }
+    header div {
+        left:30%;
+        top:10%;
+    }
+}
+@media (orientation:landscape) and (min-width:640px){
+    header h1{
+        font-size: 48px;
+    }
+    header h2 {
+        font-size: 26px;
+    }
+    header button{
+line-height: 40px;
+font-size: 20px;
+    }
+}
+@media (orientation:landscape) and (min-width:1024px){
+    header div{
+        left: 45%;
+        top: 20%;
+    }
+    header h1{
+        font-size: 70px;
+    }
+    header h2 {
+        font-size: 40px;
+    }
+    header button{
+        cursor: pointer;
+line-height: 60px;
+font-size: 30px;
+border-width: 3px;
+transition: 0.2s;
+    }
+    header button:hover{
+        background-color: #fff;
+        color: black;
+
+    }
+    header img{
+        bottom: -13%;
+    }
+}
+@media (orientation:landscape) and (min-width:1280px){
+    header img{
+        height: 100%;
+    }
+    header div{
+        left: 40%;
+    }
+    header h1{
+        font-size: 80px;
+    }
+    header h2{
+        font-size: 50px;
+    }
+    header button{
+        margin-top: 50px;
+        line-height: 70px;
+        font-size: 40px;
+    }
 }
