@@ -57,13 +57,16 @@ header img{
     position: absolute;
     height:70%;
     bottom: -10%;
-    left: 0;
+    left:-20%;
 }
 /*media header*/
 @media (orientation:portrait) and (min-width:360px){
     header button{
         line-height: 40px;
         font-size: 20px;
+    }
+    header img{
+        left:-10%;
     }
 }
 @media (orientation:portrait) and (min-width:410px){
@@ -77,6 +80,9 @@ header img{
 line-height: 40px;
 font-size: 20px;
     }
+    header img{
+        left:-5%;
+    }
 }
 @media (orientation:portrait) and (min-width:720px){
     
@@ -89,6 +95,9 @@ font-size: 20px;
     header button{
 line-height: 60px;
 font-size: 30px;
+    }
+    header img{
+        left:5%;
     }
 }
 @media (orientation:portrait) and (min-width:1024px){
@@ -112,6 +121,9 @@ font-size: 35px;
         left:30%;
         top:10%;
     }
+    header img{
+        left:0;
+    }
 }
 @media (orientation:landscape) and (min-width:640px){
     header h1{
@@ -123,6 +135,12 @@ font-size: 35px;
     header button{
 line-height: 40px;
 font-size: 20px;
+    }
+    header img{
+        left:0;
+    }
+    header img{
+        left:-10%;
     }
 }
 @media (orientation:landscape) and (min-width:1024px){
@@ -151,6 +169,9 @@ transition: 0.2s;
     header img{
         bottom: -13%;
     }
+    header img{
+        left:-10%;
+    }
 }
 @media (orientation:landscape) and (min-width:1280px){
     header img{
@@ -170,4 +191,76 @@ transition: 0.2s;
         line-height: 70px;
         font-size: 40px;
     }
+}
+
+/*sekcja nasze cechy*/
+.features{
+  margin-top: 10%;
+  padding: 5%;
+  text-align: center;
+}
+.feature{
+  margin-top: 5%;
+}
+.features h1 {
+  font-family: 'Saira-condensed',sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+.feature h2 {
+ text-transform: uppercase;
+ font-family:'Saira-condensed',sans-serif;
+ font-size: 16px;
+ font-weight: bold;
+}
+.feature img{
+  width: 100%;
+  margin-top: 20px;
+}
+.feature p{
+  margin-top: 10px;
+  font-size: 10px;
+  font-family:'Saira-condensed',sans-serif;
+}
+/*section.features media*/
+@media (orientation:portrait) and (min-width:360px){
+  .features h1 {
+    font-size: 24px;
+  }
+  .feature h2{
+    font-size: 18px;
+  }
+  .feature p {
+    font-size: 12px;
+  }
+}
+@media (orientation:portrait) and (min-width:720px){
+  .features h1 {
+    font-size: 48px;
+  }
+  .feature{
+    margin-top: 10%;
+  }
+  .feature h2{
+    font-size: 36px;
+  }
+  .feature p {
+    font-size: 24px;
+  }
+}
+@media (orientation:portrait) and (min-width:1024px){
+  .features h1 {
+    font-size: 60px;
+  }
+  .feature{
+    margin-top: 10%;
+  }
+  .feature h2{
+    font-size: 44px;
+  }
+  .feature p {
+    margin-top: 5%;
+    font-size: 30px;
+  }
 }
