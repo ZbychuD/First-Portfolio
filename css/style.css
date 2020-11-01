@@ -341,3 +341,62 @@ div.web{
 .project:nth-of-type(even){
     background-color: rgb(206, 104, 8);
 }
+/*media portfolio section*/
+
+@media(orientation:portrait) and (min-width:360px){
+    .portfolio h1{
+        font-size: 40px;
+    }
+}
+@media(orientation:portrait) and (min-width:720px){
+    .portfolio h1{
+        font-size: 70px;
+    }
+    .project h2{
+        font-size: 50px;
+    }
+    .project p{
+        font-size: 24px;
+    }
+}
+@media(orientation:landscape){
+    .portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .portfolio h1{
+        flex-basis: 100%;
+    }
+    .project{
+        flex-basis: 100%;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .project img{
+        width: 50%;
+    }
+    .project .web{
+        width: 50%;
+    }
+    .project:nth-of-type(even){
+        flex-direction: row-reverse;
+    }
+    .project:nth-of-type(even) .web {
+        padding-right: 0;
+        padding-left: 20px;
+    }
+
+}
+@media(orientation:landscape) and (min-width:1024px){
+    .portfolio h1{
+        font-size: 70px;
+    }
+    .project h2{
+        font-size: 50px;
+    }
+    .project p{
+        font-size: 24px;
+    }
+}
