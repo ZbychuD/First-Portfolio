@@ -538,13 +538,83 @@ margin-bottom: 20px;
     flex-wrap: wrap;
     align-items: center;
 }
-.social img{
+.social .image{
+    height: 70px;
     margin-bottom: 20px;
 }
-.social div{
+.social .description{
     margin-left: 20px;
+    text-align: center;
+    font-size: 20px;
 }
 /*media contact*/
 @media (orientation:landscape){
-    
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact h1{
+        flex-basis: 100%;
+    }
+    .wrap{
+        flex-basis: 45%;
+        margin-top: 0;
+    }
+    .socials{
+        flex-basis: 45%;
+        margin-top: -35vh;
+    }
+}
+@media(orientation:landscape) and (min-width:720px){
+    .socials{
+        margin-top: -25vh;
+    }
+}
+@media (min-width:1024px){
+    .contact form input{
+        height:45px;
+    }
+    .contact form textarea{
+        height: 200px;
+    }
+    .contact button{
+        margin-top: 30px;
+        font-size: 40px;
+        height: 80px;
+        
+    }
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .contact h1{
+        flex-basis: 100%;
+        font-size: 50px;
+    }
+    .wrap{
+        flex-basis: 45%;
+        margin-top: 0;
+    }
+    .socials{
+        flex-basis: 45%;
+        margin-top: -5vh;
+    }
+    .social .image{
+        margin-bottom: 20px;
+    }
+    .social .description{
+        margin-left: 20px;
+        text-align: center;
+        font-size: 40px;
+    }
+}
+@media(min-width:1280px){
+    .socials{
+        flex-basis: 45%;
+        margin-top: -25vh;
+    }
 }
